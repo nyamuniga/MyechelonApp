@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bk"
+
+>
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        app:cardCornerRadius="5dp"
+        app:paddingEnd="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupemail"
+
+            android:layout_marginLeft="@dimen/padding_extra_large_20"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signuppass"
+            android:layout_below="@+id/signupemail"
+            android:layout_marginLeft="@dimen/padding_extra_large_20"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:hint="@string/pass"
+            android:inputType="textWebPassword"
+            />
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/signupbutton"
+            android:layout_centerHorizontal="true"
+            android:text="signup"
+            android:background="@drawable/button"
+            android:paddingTop="@dimen/padding_medium_10"
+            android:paddingBottom="@dimen/padding_medium_10"
+android:layout_marginBottom="@dimen/padding_extra_large_20"
+            android:textColor="@color/white"
+            android:layout_below="@id/signuppass"
+            android:layout_marginTop="@dimen/padding_medium_10"
+            />
+    </RelativeLayout>
+   </android.support.v7.widget.CardView>
+</ScrollView>

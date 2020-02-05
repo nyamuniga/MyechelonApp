@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bk"
+
+    >
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        app:cardCornerRadius="5dp"
+        app:paddingEnd="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/pp"
+                android:src="@drawable/profile"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:layout_marginBottom="@dimen/padding_extra_large_20"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pname"
+                android:gravity="center"
+                android:layout_below="@+id/pp"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:text="name"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pusername"
+                android:gravity="center"
+                android:layout_below="@+id/pname"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:text="user name"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pcountry"
+                android:gravity="center"
+                android:layout_below="@+id/pusername"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:text="country"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pcity"
+                android:gravity="center"
+                android:layout_below="@+id/pcountry"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:text="city"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pcontacts"
+                android:gravity="center"
+                android:layout_below="@+id/pcity"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:text="contacts"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/paddress"
+                android:gravity="center"
+                android:layout_below="@+id/pcontacts"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:text="address"
+                />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/pedit"
+                android:layout_centerHorizontal="true"
+                android:text="edit"
+                android:background="@color/blue"
+                android:paddingTop="@dimen/padding_medium_10"
+                android:paddingBottom="@dimen/padding_medium_10"
+
+                android:textColor="@color/white"
+                android:layout_below="@id/paddress"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/changepass"
+                android:layout_centerHorizontal="true"
+                android:text="change password"
+                android:background="@color/blue"
+                android:paddingTop="@dimen/padding_medium_10"
+                android:paddingBottom="@dimen/padding_medium_10"
+
+                android:textColor="@color/white"
+                android:layout_below="@id/pedit"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

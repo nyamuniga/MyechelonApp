@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/padding_small_5"
+    android:paddingEnd="@dimen/padding_normal_8"
+    android:paddingStart="@dimen/padding_normal_8"
+    android:paddingRight="@dimen/padding_normal_8"
+    android:paddingTop="@dimen/padding_small_5">
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/icon_user"
+        android:gravity="center"
+        android:background="@drawable/cicle"
+        android:maxEms="1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="a"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_user"
+        android:background="@drawable/text_background"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="50dp"
+
+android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        tools:text="hello man i want to talk to you! hahhahhahahahha"
+        />
+
+</LinearLayout>

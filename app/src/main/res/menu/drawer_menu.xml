@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/sell"
+            android:icon="@drawable/ic_add"
+            android:title="sell"
+            ></item>
+        <item android:id="@+id/location"
+            android:icon="@drawable/ic_place"
+            android:title="location"
+            ></item>
+        <item android:id="@+id/userprofile"
+            android:icon="@drawable/ic_account_box"
+            android:title="profile"
+            ></item>
+        <item android:id="@+id/message"
+            android:icon="@drawable/ic_chat"
+
+            android:title="messages"
+            ></item>
+        <item android:id="@+id/logout"
+            android:icon="@drawable/ic_power"
+
+            android:title="logout"
+            ></item>
+    </group>
+
+    <item android:title="commucate">
+        <menu>
+            <item android:id="@+id/share"
+                android:title="share"
+                android:icon="@drawable/ic_share"
+                ></item>
+
+        </menu>
+
+    </item>
+</menu>

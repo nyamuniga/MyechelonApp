@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bk"
+
+    >
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editpass"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+
+                android:paddingLeft="@dimen/padding_small_5"
+                android:hint="enter new password"
+                />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/updatepass"
+                android:layout_centerHorizontal="true"
+                android:text="update password"
+                android:background="@color/blue"
+                android:paddingTop="@dimen/padding_medium_10"
+                android:paddingBottom="@dimen/padding_medium_10"
+
+                android:textColor="@color/white"
+                android:layout_below="@id/editpass"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.ContentFrameLayout>
+</ScrollView>

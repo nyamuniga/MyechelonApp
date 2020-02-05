@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/userprofile"
+        android:icon="@drawable/ic_person"
+        android:title="profile"
+        ></item>
+    <item android:id="@+id/message"
+        android:icon="@drawable/ic_message"
+
+        android:title="messages"
+        ></item></group>
+
+    <item android:title="commucate">
+        <menu>
+            <item android:id="@+id/share"
+                android:title="share"></item>
+            <item android:id="@+id/send"
+                android:title="send"></item>
+        </menu>
+
+    </item>
+</menu>

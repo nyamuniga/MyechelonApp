@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bk"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:src="@drawable/myechelon"
+            android:layout_marginTop="1dp"
+
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailtosend"
+            android:layout_below="@+id/logo"
+            android:layout_marginLeft="@dimen/padding_extra_large_20"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:hint="enter email"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/reset"
+            android:layout_centerHorizontal="true"
+            android:text="reset password"
+            android:background="@color/blue"
+            android:paddingTop="@dimen/padding_medium_10"
+            android:paddingBottom="@dimen/padding_medium_10"
+
+            android:textColor="@color/white"
+            android:layout_below="@id/emailtosend"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            />
+    </RelativeLayout>
+</ScrollView>

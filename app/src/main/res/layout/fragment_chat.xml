@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         app:layoutManager="LinearLayoutManager"
+
+ />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="message.."
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/padding_small_5"
+      android:layout_below="@+id/recycler"
+        android:id="@+id/message"
+        android:background="@drawable/roun_rectangle"
+        android:imeOptions="actionSend"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/padding_small_5"
+
+
+        />
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bk"
+
+    >
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        app:cardCornerRadius="5dp"
+        app:paddingEnd="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add an image"
+                android:gravity="center"
+                android:id="@+id/add"
+                android:layout_alignParentTop="true"
+                android:layout_alignEnd="@+id/update" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/profile"
+                android:src="@drawable/profile"
+                android:layout_gravity="center"
+                android:layout_below="@+id/add"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:layout_below="@+id/profile"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:hint="name"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:hint="username"
+
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/country"
+                android:layout_below="@+id/username"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:hint="country"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/city"
+                android:layout_below="@+id/country"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:hint="city"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contacts"
+                android:layout_below="@+id/city"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:hint="contacts"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:layout_below="@+id/contacts"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:hint="address"
+                />
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/update"
+                android:layout_centerHorizontal="true"
+                android:text="update"
+                android:background="@drawable/button"
+                android:paddingTop="@dimen/padding_medium_10"
+                android:paddingBottom="@dimen/padding_medium_10"
+                android:layout_marginBottom="@dimen/padding_extra_large_20"
+                android:textColor="@color/white"
+                android:layout_below="@id/address"
+                android:layout_marginTop="@dimen/padding_medium_10"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>
